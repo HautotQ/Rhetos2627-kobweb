@@ -8,9 +8,9 @@ html {
     width: 100%;
 
     background: linear-gradient(
-            135deg,
-            #007EA7,
-            #F2E6C9
+        135deg,
+        #007EA7,
+        #F2E6C9
     );
 }
 
@@ -81,7 +81,7 @@ p {
 }
 
 .comity-parent {
-    text-align: left;
+    text-align: center;
     background: darkcyan;
     margin: 1px;
 }
@@ -95,10 +95,6 @@ button {
     width: 100%;
     height: 50px;
     font-size: 25px;
-}
-
-.comity-parent {
-    text-align: center;
 }
 
 a {
@@ -177,4 +173,89 @@ a {
 
 .element:hover {
     transform: translateY(-2px);
+}
+
+
+/* ================================= */
+/*          RESPONSIVE               */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .hbox {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .element {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    a {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .element {
+        max-width: 100%;
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    a {
+        width: 90%;
+    }
+
+    .hbox {
+        flex-direction: column;
+    }
 }
